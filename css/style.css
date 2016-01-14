@@ -1,0 +1,31 @@
+body{
+    font-family: Helvetica;
+    font-size: 13px;
+}
+
+.prop-row-container{
+    width: 98%;
+    margin: 1px auto;
+    background-color: rgba(0,0,0,0.05);
+    padding: 4px 0px;
+
+}
+
+.prop-name{
+    float: left;
+    width: 30%;
+}
+.prop-vale{
+    float: left;
+    width: 70%;
+}
+
+.prop-name{
+    text-align: right;
+    padding:0px 10px 0px 0px;
+    color: #777;
+}
+
+.prop-name:after{
+    content: ":";
+}

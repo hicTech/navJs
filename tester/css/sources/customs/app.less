@@ -1,0 +1,54 @@
+@import (reference) "../core/flexScaffolding";
+@import "../less";
+body{
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+}
+.main-wrapper {
+  max-width: @width-table;
+  max-height: @height-table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color:@color-text;
+  font-family: @font-family;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  overflow: hidden;
+
+  @media @onlyScreen and @mobile, @tablet{
+    border-radius: 0px;
+  }
+
+  .tab-wrapper{
+    .rows();
+
+    .header-table{
+      .cell();
+      .h(@height-header);
+      background-color: @color-background-header;
+      .HEADER();
+    }
+    .body-table{
+      background-color: @color-background-table;
+      .BODY();
+    }
+  }
+
+
+}
+
+
+
+

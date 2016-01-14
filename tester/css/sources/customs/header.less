@@ -1,0 +1,77 @@
+@import (reference) "../core/flexScaffolding";
+@import "../less";
+
+.HEADER() {
+  .header-wrapper {
+    .cols();
+
+    .github-content {
+      .cell();
+      .w(150px);
+
+      .github {
+        .logo {
+          margin-left: 5px;;
+        }
+      }
+    }
+
+    .logo-content {
+      .flex();
+
+      .navigatorjs {
+        color: @color-text-header;
+        font-size: @text-size-header-desktop;
+      }
+    }
+
+    .social-content {
+      .cell();
+      .w(150px);
+
+      .link-content {
+        .social {
+          float: left;
+        }
+        .facebook {
+          display:none;
+          margin-left: 15px;
+        }
+      }
+    }
+    a, a:link, a:visited {
+      color: @color-text-header;
+      font-size: @text-size-header-desktop;
+      text-decoration: none;
+      &:hover {
+        color: @color-text-header-hover;
+      }
+    }
+  }
+
+  @media @onlyScreen and @mobile{
+    .header-wrapper {
+      .github-content {
+        .w(60px);
+        .github {
+          .label-github{
+            display:none;
+          }
+          .logo {
+            margin-left: 5px;;
+          }
+        }
+      }
+      .social-content {
+        .w(60px);
+
+        .link-content {
+          .facebook {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+  }
+}
