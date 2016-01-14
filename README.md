@@ -10,6 +10,8 @@ Js library to get client properties
   - [tester]
   - [all]
 
+
+![alt tag](https://raw.githubusercontent.com/hicTech/navJs/gh-pages/tester.png)
 ## Usage
 ```html
 <script src="../jquery-2.1.1.min.js"></script>
@@ -76,8 +78,8 @@ MIT......
 
    [jquery]: <https://jquery.com/>
    [underscore]: <http://underscorejs.org/>
-   [tester]: <http://hictech.com/>
-   [all]: <http://hictech.com/>
+   [tester]: <http://hictech.github.io/navJs/tester/index.html>
+   [all]: <http://hictech.github.io/navJs/>
    [underscore+]: <http://hictech.com/>
 
 
