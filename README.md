@@ -11,7 +11,9 @@ Js library to get client properties
   - [all]
 
 
-![alt tag](https://raw.githubusercontent.com/hicTech/navJs/gh-pages/tester.png)
+<a href="http://hictech.github.io/navJs/tester/index.html" target="_blank"><img alt="tester" src="https://raw.githubusercontent.com/hicTech/navJs/gh-pages/tester.png" title="tester"/></a>
+
+![alt tag]()
 ## Usage
 ```html
 <script src="../jquery-2.1.1.min.js"></script>
