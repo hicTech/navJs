@@ -78,11 +78,11 @@ var navJS = {
         return this.isMobile() && this.isIE();
     },
 
-    inMobileOpera: function () {
+    isMobileOpera: function () {
         return this.isMobile() && this.isOpera();
     },
 
-    inMobileFirefox: function () {
+    isMobileFirefox: function () {
         return this.isMobile() && this.isFirefox();
     },
 
