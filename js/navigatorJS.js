@@ -79,7 +79,7 @@ var navJS = {
     },
 
     isMobileOpera: function () {
-        return navigator.userAgent.indexOf('Opera Mini') > -1;
+        return Object.prototype.toString.call(window.operamini) === "[object OperaMini]";
     },
 
     isMobileFirefox: function () {
@@ -178,4 +178,3 @@ var navJS = {
 }
 
 
-alert(Object.prototype.toString.call(window.operamini) === "[object OperaMini]");
