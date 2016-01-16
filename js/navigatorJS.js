@@ -13,7 +13,7 @@ var navJS = {
         return navigator.userAgent;
     },
     browserName: function () {
-        var ua = navigator.userAgent, tem,
+        var ua = this.userAgent(), tem,
             M = ua.match(/(fxios|opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
         if (/trident/i.test(M[1])) {
             tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
@@ -34,10 +34,10 @@ var navJS = {
 
 
     isMobile: function () {
-        return navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) != null;
+        return this.userAgent().match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) != null;
     },
     isDesktop: function () {
-        return navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) == null;
+        return this.userAgent().match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) == null;
     },
 
 
@@ -46,10 +46,10 @@ var navJS = {
 
 
     isSafari: function () {
-        return (navigator.userAgent.indexOf("Safari") != -1 && navigator.vendor.indexOf("Apple Computer") != -1 && !this.isChrome()) && !this.isFirefox();
+        return (this.userAgent().indexOf("Safari") != -1 && navigator.vendor.indexOf("Apple Computer") != -1 && !this.isChrome()) && !this.isFirefox();
     },
     isChrome: function () {
-        return ((navigator.userAgent.indexOf("Chrome") != -1 && navigator.vendor.indexOf("Google Inc") != -1) || this.userAgent().indexOf("CriOS") != -1) && !this.isOpera();
+        return ((this.userAgent().indexOf("Chrome") != -1 && navigator.vendor.indexOf("Google Inc") != -1) || this.userAgent().indexOf("CriOS") != -1) && !this.isOpera();
     },
     isIE: function () {
         return this.browserName().toLowerCase().match(/ie|msie|iemobile/i) != null;
@@ -59,7 +59,7 @@ var navJS = {
 
     },
     isOpera: function () {
-        return this.browserName().toLowerCase().match(/opera|opr|opera mini/i) != null;
+        return this.userAgent().toLowerCase().match(/opera|opr|opera mini|opios/i) != null;
     },
 
 
@@ -78,11 +78,11 @@ var navJS = {
         return this.isMobile() && this.isIE();
     },
 
-    inMobileOpera: function () {
-        return this.isMobile() && this.isOpera();
+    isMobileOpera: function () {
+        return navigator.userAgent.indexOf('Opera Mini') > -1;
     },
 
-    inMobileFirefox: function () {
+    isMobileFirefox: function () {
         return this.isMobile() && this.isFirefox();
     },
 
@@ -105,25 +105,25 @@ var navJS = {
 
 
     isIOS: function () {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i) != null;
+        return this.userAgent().match(/iPhone|iPad|iPod/i) != null;
     },
     isAndroid: function () {
-        return navigator.userAgent.match(/Android/i) != null;
+        return this.userAgent().match(/Android/i) != null;
     },
     isWindows: function () {
-        return navigator.userAgent.match(/Windows/i) != null;
+        return this.userAgent().match(/Windows/i) != null;
     },
     isUnix: function () {
-        return navigator.userAgent.match(/Unix/i) != null;
+        return this.userAgent().match(/Unix/i) != null;
     },
     isMac: function () {
-        return navigator.userAgent.match(/Mac/i) != null && !this.isIOS();
+        return this.userAgent().match(/Mac/i) != null && !this.isIOS();
     },
     isLinux: function () {
-        return navigator.userAgent.match(/Linux/i) != null && !this.isAndroid();
+        return this.userAgent().match(/Linux/i) != null && !this.isAndroid();
     },
     isBlackBerry: function () {
-        return navigator.userAgent.match(/BlackBerry/i) != null;
+        return this.userAgent().match(/BlackBerry/i) != null;
     },
 
 
@@ -178,3 +178,4 @@ var navJS = {
 }
 
 
+alert(Object.prototype.toString.call(window.operamini) === "[object OperaMini]");
