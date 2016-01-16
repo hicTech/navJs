@@ -55,11 +55,11 @@ var navJS = {
         return this.browserName().toLowerCase().match(/ie|msie|iemobile/i) != null;
     },
     isFirefox: function () {
-        return this.browserName().toLowerCase().match(/firefox|fxios/i) != null && !this.isOpera();
+        return this.browserName().toLowerCase().match(/firefox|fxios/i) != null;
 
     },
     isOpera: function () {
-        return this.userAgent().toLowerCase().match(/opera|opr|opera mini|opios/i) != null;
+        return this.browserName().toLowerCase().match(/opera|opr|opera mini/i) != null;
     },
 
 
@@ -72,17 +72,17 @@ var navJS = {
         return this.userAgent().toLowerCase().match("crios") != null
     },
     isMobileSafari: function () {
-        return this.isMobile() && this.isSafari() && !this.isOpera();
+        return this.isMobile() && this.isSafari();
     },
     isMobileIE: function () {
         return this.isMobile() && this.isIE();
     },
 
-    isMobileOpera: function () {
+    inMobileOpera: function () {
         return this.isMobile() && this.isOpera();
     },
 
-    isMobileFirefox: function () {
+    inMobileFirefox: function () {
         return this.isMobile() && this.isFirefox();
     },
 
