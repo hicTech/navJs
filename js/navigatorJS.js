@@ -59,7 +59,7 @@ var navJS = {
 
     },
     isOpera: function () {
-        return this.browserName().toLowerCase().match(/opera|opr|opera mini|opios/i) != null;
+        return this.userAgent().toLowerCase().match(/opera|opr|opera mini|opios/i) != null;
     },
 
 
