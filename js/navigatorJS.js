@@ -177,5 +177,3 @@ var navJS = {
 
 }
 
-
-alert("new");
