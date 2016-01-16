@@ -59,7 +59,7 @@ var navJS = {
 
     },
     isOpera: function () {
-        return this.browserName().toLowerCase().match(/opera|opr|opera mini/i) != null;
+        return this.browserName().toLowerCase().match(/opera|opr|opera mini|opios/i) != null;
     },
 
 
@@ -72,7 +72,7 @@ var navJS = {
         return this.userAgent().toLowerCase().match("crios") != null
     },
     isMobileSafari: function () {
-        return this.isMobile() && this.isSafari();
+        return this.isMobile() && this.isSafari() && !this.isOpera();
     },
     isMobileIE: function () {
         return this.isMobile() && this.isIE();
