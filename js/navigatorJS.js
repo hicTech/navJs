@@ -46,7 +46,7 @@ var navJS = {
 
 
     isSafari: function () {
-        return (this.userAgent().indexOf("Safari") != -1 && navigator.vendor.indexOf("Apple Computer") != -1 && !this.isChrome()) && !this.isFirefox();
+        return (this.userAgent().indexOf("Safari") != -1 && navigator.vendor.indexOf("Apple Computer") != -1 && !this.isChrome()) && !this.isFirefox() && !this.isOpera();
     },
     isChrome: function () {
         return ((this.userAgent().indexOf("Chrome") != -1 && navigator.vendor.indexOf("Google Inc") != -1) || this.userAgent().indexOf("CriOS") != -1) && !this.isOpera();
@@ -59,7 +59,7 @@ var navJS = {
 
     },
     isOpera: function () {
-        return this.userAgent().toLowerCase().match(/opera|opr|opera mini|opios/i) != null;
+        return this.userAgent().toLowerCase().match(/opera|opr|opera mini|opios/i) != null || Object.prototype.toString.call(window.operamini) === "[object OperaMini]";
     },
 
 
@@ -79,7 +79,7 @@ var navJS = {
     },
 
     isMobileOpera: function () {
-        return Object.prototype.toString.call(window.operamini) === "[object OperaMini]";
+        return this.isMobile() && this.isOpera();
     },
 
     isMobileFirefox: function () {
