@@ -55,7 +55,7 @@ var navJS = {
         return this.browserName().toLowerCase().match(/ie|msie|iemobile/i) != null;
     },
     isFirefox: function () {
-        return this.browserName().toLowerCase().match(/firefox|fxios/i) != null;
+        return this.browserName().toLowerCase().match(/firefox|fxios/i) != null && !this.isOpera();
 
     },
     isOpera: function () {
