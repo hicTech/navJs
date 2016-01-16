@@ -69,7 +69,7 @@ var navJS = {
 
 
     isMobileChrome: function () {
-        return this.userAgent().toLowerCase().match("crios") != null
+        return (this.userAgent().toLowerCase().match("crios") != null) || (this.isChrome() && this.isMobile())
     },
     isMobileSafari: function () {
         return this.isMobile() && this.isSafari();

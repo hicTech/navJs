@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a18f761-d4d5-49b5-a3f2-f6e3e743cc42" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tester/index.html" afterPath="$PROJECT_DIR$/tester/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/navigatorJS.js" afterPath="$PROJECT_DIR$/js/navigatorJS.js" />
     </list>
     <ignored path="navJs.iws" />
@@ -27,14 +26,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="855">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.69970846" vertical-offset="75" max-vertical-offset="1140">
+              <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
               <folding>
-                <marker date="1452965549000" expanded="false" signature="1136:1147" placeholder="..." />
-                <marker date="1452965549000" expanded="false" signature="1208:1217" placeholder="..." />
+                <marker date="1452971951000" expanded="false" signature="2526:2537" placeholder="..." />
+                <marker date="1452971951000" expanded="false" signature="2598:2607" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -50,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigatorJS.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="navigatorJS.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/navigatorJS.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23245615" vertical-offset="381" max-vertical-offset="2775">
-              <caret line="36" column="119" selection-start-line="36" selection-start-column="119" selection-end-line="36" selection-end-column="119" />
+            <state vertical-scroll-proportion="-17.884615" vertical-offset="600" max-vertical-offset="2775">
+              <caret line="71" column="109" selection-start-line="71" selection-start-column="109" selection-end-line="71" selection-end-column="109" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -76,14 +75,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/index.html" />
+        <option value="$PROJECT_DIR$/tester/index.html" />
         <option value="$PROJECT_DIR$/js/navigatorJS.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/tester/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="31" />
+    <option name="y" value="137" />
     <option name="width" value="1440" />
     <option name="height" value="841" />
   </component>
@@ -195,6 +195,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="navJs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="favicons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -211,6 +225,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -271,8 +288,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="841" extended-state="6" />
-    <editor active="true" />
+    <frame x="31" y="137" width="1440" height="841" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -319,8 +336,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="840">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1452965549000" expanded="false" signature="1136:1147" placeholder="..." />
-            <marker date="1452965549000" expanded="false" signature="1208:1217" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2526:2537" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2598:2607" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -348,8 +365,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="840">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1452965549000" expanded="false" signature="1136:1147" placeholder="..." />
-            <marker date="1452965549000" expanded="false" signature="1208:1217" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2526:2537" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2598:2607" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -377,8 +394,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="840">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1452965549000" expanded="false" signature="1136:1147" placeholder="..." />
-            <marker date="1452965549000" expanded="false" signature="1208:1217" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2526:2537" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2598:2607" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -406,8 +423,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1452965549000" expanded="false" signature="1136:1147" placeholder="..." />
-            <marker date="1452965549000" expanded="false" signature="1208:1217" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2526:2537" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2598:2607" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -455,17 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="855">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding>
-            <marker date="1452965549000" expanded="false" signature="1136:1147" placeholder="..." />
-            <marker date="1452965549000" expanded="false" signature="1208:1217" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tester/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="4890">
@@ -476,10 +482,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/navigatorJS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23245615" vertical-offset="381" max-vertical-offset="2775">
-          <caret line="36" column="119" selection-start-line="36" selection-start-column="119" selection-end-line="36" selection-end-column="119" />
+        <state vertical-scroll-proportion="-17.884615" vertical-offset="600" max-vertical-offset="2775">
+          <caret line="71" column="109" selection-start-line="71" selection-start-column="109" selection-end-line="71" selection-end-column="109" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69970846" vertical-offset="75" max-vertical-offset="1140">
+          <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+          <folding>
+            <marker date="1452971951000" expanded="false" signature="2526:2537" placeholder="..." />
+            <marker date="1452971951000" expanded="false" signature="2598:2607" placeholder="..." />
           </folding>
         </state>
       </provider>
