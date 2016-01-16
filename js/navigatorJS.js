@@ -34,10 +34,10 @@ var navJS = {
 
 
     isMobile: function () {
-        return this.userAgent().match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) != null;
+        return this.userAgent().match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile|CRiOS|OPiOS|Mobile|FxiOS/i) != null;
     },
     isDesktop: function () {
-        return this.userAgent().match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i) == null;
+        return !this.isMobile();
     },
 
 
