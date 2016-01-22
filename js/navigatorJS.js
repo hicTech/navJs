@@ -153,7 +153,7 @@ var navJS = {
             return false;
     },
     isStandAlone: function () {
-        if (_.is(navigator.standalone))
+        if (!!navigator.standalone)
             return navigator.standalone;
         return false;
     },
