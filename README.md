@@ -2,9 +2,7 @@
 Js library to get client properties
 
 ## Dependencies
-  - [jquery]
-  - [underscore]
-  - [underscore+]
+  none
 
 ## Demos
   - [tester]
@@ -15,9 +13,6 @@ Js library to get client properties
 
 ## Usage
 ```html
-<script src="../jquery-2.1.1.min.js"></script>
-<script src="../_.js"></script>
-<script src="../_plus.js"></script>
 <script src="../navigatorJS.js"></script>
 ```
 
@@ -30,6 +25,7 @@ navJS.isDesktop();
 navJS.isChrome();
 navJS.isSafari();
 navJS.isIE();
+navJS.isIEdge();
 navJS.isFirefox();
 navJS.isOpera();
 
