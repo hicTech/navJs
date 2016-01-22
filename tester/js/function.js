@@ -19,7 +19,7 @@ $(document).ready(function () {
     }if(navJS.isSafari()){
         setBrowser('S');
 
-    }if(navJS.isIE()){
+    }if(navJS.isIE() || navJS.isEdge('E')){
         setBrowser('E');
 
     }if(navJS.isOpera()){
