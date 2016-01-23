@@ -20,8 +20,23 @@ var navJS = {
             return 'IE ' + (tem[1] || '');
         }
         if (M[1] === 'Chrome') {
-            tem = ua.match(/\bOPR\/(\d+)/)
-            if (tem != null) return 'Opera ' + tem[1];
+        	/*
+        	 * IE Edge has "chrome" as user agent and
+        	 * this check is mandatory at this point.
+        	 * 
+        	 * If the check is passed the M variabled
+        	 * is replaced and the code continue like
+        	 * other browers. 
+        	 */ 
+        	tem = ua.match(/(edge(?=\/))\/?\s*(\d+)/i);
+        	if( !!tem ) {
+        		M = tem;
+        	}
+
+        	else {
+        		tem = ua.match(/\bOPR\/(\d+)/)
+        		if (tem != null) return 'Opera ' + tem[1];
+        	}
         }
         M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
         if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1]);
@@ -53,6 +68,9 @@ var navJS = {
     },
     isIE: function () {
         return this.browserName().toLowerCase().match(/ie|msie|iemobile/i) != null;
+    },
+    isEdge: function () {
+        return this.browserName().toLowerCase().match(/edge/i) != null;
     },
     isFirefox: function () {
         return this.browserName().toLowerCase().match(/firefox|fxios/i) != null;
@@ -153,7 +171,7 @@ var navJS = {
             return false;
     },
     isStandAlone: function () {
-        if (_.is(navigator.standalone))
+        if (!!navigator.standalone)
             return navigator.standalone;
         return false;
     },
