@@ -33,8 +33,8 @@ navJS.isOpera();
 navJS.isMobileChrome();
 navJS.isMobileSafari();
 navJS.isMobileIE();
-navJS.inMobileFirefox;
-navJS.inMobileOpera();
+navJS.isMobileFirefox();
+navJS.isMobileOpera();
 
 /* HD monitor Detection */
 navJS.isHD();
