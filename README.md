@@ -18,6 +18,11 @@ Js library to get client properties
 
 ## Features
 ```js
+/* Summary of information in JSON */
+navJs.toJSON();
+
+navJs.os();
+navJs.browser();
 navJS.isMobile();
 navJS.isDesktop();
 
@@ -25,7 +30,7 @@ navJS.isDesktop();
 navJS.isChrome();
 navJS.isSafari();
 navJS.isIE();
-navJS.isIEdge();
+navJS.isEdge();
 navJS.isFirefox();
 navJS.isOpera();
 
@@ -55,6 +60,7 @@ navJS.isIPhone();
 
 /* Orientation Detection */
 navJS.isLandscape();
+navJS.isPortrait();
 
 /* Other Detection */
 navJS.getIOSVersion();

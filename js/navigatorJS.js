@@ -1,6 +1,6 @@
 /*
 
- NavigatorJS 0.1
+ NavigatorJS 0.2
  https://github.com/hicTech/navigatorJs
  www.hictech.com
 
@@ -8,6 +8,60 @@
 
 
 var navJS = {
+
+    toJSON: function() {
+        var json =  {
+            userAgent: this.userAgent(),
+
+            os: this.os(),
+
+            browser: {
+                name: this.browser(),
+                version: this.version(),
+                mobile: this.isMobile(),
+                desktop: this.isDesktop(),
+            },
+
+
+            screen: {
+                hd: this.isHD(),
+                pixelRatio: this.pixelRatio(),
+                landscape: this.isLandscape(),
+                portrait: this.isPortrait(),
+                touch: this.isTouch()
+            }
+        }
+
+        if( this.isIOS() ) {
+            json.ios = {
+                version: this.getIOSVersion(),
+                device: this.isIPhone()? 'iphone' : this.isIPad()? 'ipad' : undefined
+            }
+        }
+
+        return json;
+    },
+
+    os: function() {
+        if( this.isIOS() ) { return 'ios'; }
+        if( this.isAndroid() ) { return 'android'; }
+        if( this.isWindows() ) { return 'windows'; }
+        if( this.isUnix() ) { return 'unix'; }
+        if( this.isMac() ) { return 'mac'; }
+        if( this.isLinux() ) { return 'linux'; }
+        if( this.isBlackBerry() ) { return 'blackberry'; }
+        else return undefined;
+    },
+
+    browser: function() {
+        if ( this.isSafari() ) { return 'safari'; }
+        if ( this.isChrome() ) { return 'chrome'; }
+        if ( this.isIE() ) { return 'ie'; }
+        if ( this.isEdge() ) { return 'edge'; }
+        if ( this.isFirefox() ) { return 'firefox'; }
+        if ( this.isOpera() ) { return 'opera'; }
+        else return undefined;
+    },
 
     userAgent: function () {
         return navigator.userAgent;
@@ -20,23 +74,23 @@ var navJS = {
             return 'IE ' + (tem[1] || '');
         }
         if (M[1] === 'Chrome') {
-        	/*
-        	 * IE Edge has "chrome" as user agent and
-        	 * this check is mandatory at this point.
-        	 * 
-        	 * If the check is passed the M variabled
-        	 * is replaced and the code continue like
-        	 * other browers. 
-        	 */ 
-        	tem = ua.match(/(edge(?=\/))\/?\s*(\d+)/i);
-        	if( !!tem ) {
-        		M = tem;
-        	}
+            /*
+             * IE Edge has "chrome" as user agent and
+             * this check is mandatory at this point.
+             * 
+             * If the check is passed the M variabled
+             * is replaced and the code continue like
+             * other browers. 
+             */ 
+            tem = ua.match(/(edge(?=\/))\/?\s*(\d+)/i);
+            if( !!tem ) {
+                M = tem;
+            }
 
-        	else {
-        		tem = ua.match(/\bOPR\/(\d+)/)
-        		if (tem != null) return 'Opera ' + tem[1];
-        	}
+            else {
+                tem = ua.match(/\bOPR\/(\d+)/)
+                if (tem != null) return 'Opera ' + tem[1];
+            }
         }
         M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
         if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1]);
@@ -161,6 +215,9 @@ var navJS = {
         }
         return false;
     },
+    isPortrait: function () {
+        return this.isLandscape();
+    },
     getIOSVersion: function () {
         if (this.isIOS()) {
             var OSVersion = navigator.appVersion.match(/OS (\d+_\d+)/i);
@@ -194,4 +251,3 @@ var navJS = {
 
 
 }
-

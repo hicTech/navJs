@@ -1,0 +1,26 @@
+{
+    "name": "navJs",
+    "version": "0.2",
+    "description": "Js library to get client properties",
+    "main": [
+        "js/navigatorJS.min.js"
+    ],
+    "keywords": [
+        "navigator",
+        "userAgent",
+        "browser",
+        "client properties"
+    ],
+    "authors": [
+        "Marco Allori <marco.allori@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "private": true
+}
