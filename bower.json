@@ -13,14 +13,16 @@
     ],
     "authors": [
         "Marco Allori <marco.allori@gmail.com>"
+        "Andrea Cardamone <andrea.cardam@gmail.com>"
     ],
     "license": "MIT",
     "ignore": [
+	".*",
         "**/.*",
+	"uglify.sh"
         "node_modules",
         "bower_components",
         "test",
         "tests"
-    ],
-    "private": true
+    ]
 }
