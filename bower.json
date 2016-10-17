@@ -2,9 +2,7 @@
     "name": "navJs",
     "version": "0.2",
     "description": "Js library to get client properties",
-    "main": [
-        "js/navigatorJS.min.js"
-    ],
+    "license": "MIT",
     "keywords": [
         "navigator",
         "userAgent",
@@ -15,11 +13,18 @@
         "Marco Allori <marco.allori@gmail.com>"
         "Andrea Cardamone <andrea.cardam@gmail.com>"
     ],
-    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:hicTech/navJs.git"
+    },
+    "moduleType": "globals",
+    "main": [
+        "dist/navigatorJS.min.js"
+    ],
     "ignore": [
-	".*",
+        ".*",
         "**/.*",
-	"uglify.sh"
+        "uglify.sh"
         "node_modules",
         "bower_components",
         "test",
