@@ -1,5 +1,5 @@
 {
-    "name": "navJs",
+    "name": "navjs",
     "version": "0.2",
     "description": "Js library to get client properties",
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "moduleType": "globals",
     "main": [
-        "dist/navigatorJS.min.js"
+        "index.standalone.html"
     ],
     "ignore": [
         ".*",
