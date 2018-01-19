@@ -97,6 +97,22 @@ var navJS = {
         return M.join(' ');
     },
 
+    innerWidth:function(){
+        return window.innerWidth;
+    },
+
+    innerHeight:function(){
+        return window.innerHeight;
+    },
+
+    width:function(){
+        return screen.width;
+    },
+
+    height:function(){
+        return screen.height;
+    },
+
 
 
     /* mobile detection */
@@ -216,7 +232,7 @@ var navJS = {
         return false;
     },
     isPortrait: function () {
-        return this.isLandscape();
+        return !this.isLandscape();
     },
     getIOSVersion: function () {
         if (this.isIOS()) {
